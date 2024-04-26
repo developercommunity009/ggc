@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('../node_modules/@syncfusion/ej2-base/styles/material.css');
+@import url('../node_modules/@syncfusion/ej2-buttons/styles/material.css');
+@import url('../node_modules/@syncfusion/ej2-calendars/styles/material.css');
+/* @import url('../node_modules/@syncfusion/ej2-charts/styles/material.css'); */
+/* @import url('../node_modules/@syncfusion/ej2-dropdowns/styles/material.css'); */
+@import url('../node_modules/@syncfusion/ej2-inputs/styles/material.css');
+@import url('../node_modules/@syncfusion/ej2-navigations/styles/material.css');
+@import url('../node_modules/@syncfusion/ej2-popups/styles/material.css');
+@import url('../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css');
+/* @import url('../node_modules/@syncfusion/ej2-react-charts/styles/material.css'); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Urbanist;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+
+@layer components {
+
+  /* .my-custom-class {
+  } */
+
+  .btn-bg {
+    /* background: linear-gradient(138.01deg, #6E44D9 6.64%, #1876C5 103.21%); */
+    @apply bg-gradient-to-tr from-blue-600 to-green-700
+  }
+  .rotate-animation {
+    transform: rotate(360deg);
+    transition: all 1.6s ease-in-out;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #3b82f6, #047857);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-border {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #3b82f6, #047857) 1;
+  border-radius: 3rem;
+}
+
+  .text-color {
+    background: linear-gradient(138.01deg, #6E44D9 6.64%, #1876C5 103.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .team-bg {
+    background:  linear-gradient(153.87deg, #6E44D9 5.11%, rgba(24, 118, 197, 0) 91.35%)
+  }
+
+  .black-gradient {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+        #434343,
+        #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+        #434343,
+        #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
